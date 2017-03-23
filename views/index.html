@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Registro de Personas</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/css/bulma.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="columns is-multiline is-centered">
+      <header class="column is-11">
+        <div class="columns">
+          <div class="column is-2">
+            <figure class="image is-96x96">
+              <img src="images/logo.png" alt="logo">
+            </figure>
+          </div>
+          <div class="column is-8">
+            REGISTRO DE PERSONAS UVM
+          </div>
+          <div class="column is-2">
+            <span id="fecha"></span>
+          </div>
+        </div>
+      </header>
+      <section class="column is-11">
+        <div class="columns">
+          <aside class="column is-2">
+            <p class="menu-label">
+              Registro
+            </p>
+            <ul class="menu-list">
+              <li>
+                <a class="is-active" href="/">Registrar Persona</a>
+              </li>
+            </ul>
+            <p class="menu-label">
+              Lista
+            </p>
+            <ul class="menu-list">
+              <li>
+                <a href="/lista">Personas Ingresadas</a>
+              </li>
+            </ul>
+          </aside>
+          <article class="column is-10">
+
+            <form action="/nuevo" method="POST" class="columns is-multiline">
+
+              <div class="column is-2 control">
+                <label class="label">Cedula</label>
+                <input
+                  id="cedula"
+                  class="input"
+                  type="text"
+                  name="cedula"
+                  autofocus="autofocus"
+                  required="required" />
+              </div>
+              <div class="column is-5 control">
+                <label class="label">Nombre</label>
+                <input
+                  id="nombre"
+                  class="input"
+                  type="text"
+                  name="nombre"
+                  required="required" />
+              </div>
+              <div class="column is-5 control">
+                <label class="label">Apellido</label>
+                <input
+                  id="apellido"
+                  class="input"
+                  type="text"
+                  name="apellido"
+                  required="required" />
+              </div>
+
+              <div class="column is-1 control">
+                <label class="label">Edad</label>
+                <input
+                  id="edad"
+                  class="input"
+                  type="number"
+                  name="edad"
+                  required="required" />
+              </div>
+              <div class="column is-3 control">
+                <label class="label">Fecha de Nacimiento</label>
+                <input
+                  id="nacimiento"
+                  class="input"
+                  type="date"
+                  name="nacimiento"
+                  required="required" />
+              </div>
+              <div class="column is-8 control">
+                <label class="label">Direccion</label>
+                <input
+                  id="direccion"
+                  class="input"
+                  type="text"
+                  name="direccion"
+                  required="required" />
+              </div>
+
+              <div class="column is-4 control">
+                <label class="label">Telefonos</label>
+                <input
+                  id="telefonos"
+                  class="input"
+                  type="text"
+                  name="telefonos"
+                  required="required" />
+              </div>
+              <div class="column is-8 control">
+                <label class="label">Hobbies</label>
+                <input
+                  id="hobbies"
+                  class="input"
+                  type="text"
+                  name="hobbies"
+                  required="required" />
+              </div>
+
+              <div class="column is-2 control">
+                <input
+                  id="enviar"
+                  class="button is-success"
+                  type="submit"
+                  value="Guardar / Editar" />
+              </div>
+              <div class="column is-8 control">
+                <input
+                  id="cancelar"
+                  class="button is-warning"
+                  type="button"
+                  value="Cancelar" />
+              </div>
+
+            </form>
+
+          </article>
+        </div>
+      </section>
+      <footer class="column is-11">
+        <span>Sistema Registro de Personas UVM &copy; 2017</span>
+      </footer>
+    </div>
+    <script src="/js/jquery-1.10.2.min.js"></script>
+    <script src="/js/moment.min.js"></script>
+    <script src="/js/index.js"></script>
+  </body>
+</html>

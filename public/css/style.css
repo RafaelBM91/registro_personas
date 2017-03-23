@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'lobster';
+  src: url('/fonts/Lobster-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+header {
+  height: 120px;
+  border-bottom: 1px solid lightgrey;
+}
+header > div > div:nth-child(2) {
+  height: 120px;
+  font-family: 'lobster';
+  text-align: center;
+  font-size: 50px;
+  color: green;
+}
+header > div > div:nth-child(3) {
+  text-align: right;
+}
+section {
+  height: 500px;
+}
+section > div > aside {
+  height: 500px;
+  border-right: 1px solid lightgrey;
+}
+section > div > article {
+  height: 500px;
+}
+section > div > article {
+  height: 500px;
+}
+footer {
+  border-top: 1px solid lightgrey;
+  height: 30px;
+  text-align: center;
+}

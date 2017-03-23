@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Registro de Personas</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/css/bulma.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="columns is-multiline is-centered">
+      <header class="column is-11">
+        <div class="columns">
+          <div class="column is-2">
+            <figure class="image is-96x96">
+              <img src="images/logo.png" alt="logo">
+            </figure>
+          </div>
+          <div class="column is-8">
+            REGISTRO DE PERSONAS UVM
+          </div>
+          <div class="column is-2">
+            <span id="fecha"></span>
+          </div>
+        </div>
+      </header>
+      <section class="column is-11">
+        <div class="columns">
+          <aside id="pre-tabla" class="column is-2">
+            <p class="menu-label">
+              Registro
+            </p>
+            <ul class="menu-list">
+              <li>
+                <a href="/">Registrar Persona</a>
+              </li>
+            </ul>
+            <p class="menu-label">
+              Lista
+            </p>
+            <ul class="menu-list">
+              <li>
+                <a class="is-active" href="/lista">Personas Ingresadas</a>
+              </li>
+            </ul>
+          </aside>
+          <article class="column is-10">
+            <table class="table is-bordered is-striped">
+              <thead>
+                <tr>
+                  <th>CEDULA</th>
+                  <th>NOMBRE</th>
+                  <th>APELLIDO</th>
+                  <th>EDAD</th>
+                  <th>FECHA DE NACIMIENTO</th>
+                  <th>DIRECCION</th>
+                  <th>TELEFONO</th>
+                  <th>HOBBIES</th>
+                </tr> 
+              </thead>
+              <tbody></tbody>
+            </table>
+          </article>
+        </div>
+      </section>
+      <footer class="column is-11">
+        <span>Sistema Registro de Personas UVM &copy; 2017</span>
+      </footer>
+    </div>
+    <script src="/js/jquery-1.10.2.min.js"></script>
+    <script src="/js/moment.min.js"></script>
+    <script src="/js/lista.js"></script>
+  </body>
+</html>
